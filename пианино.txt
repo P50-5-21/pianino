@@ -1,0 +1,245 @@
+namespace PiAnInO
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Key();
+        }
+        static void Choice_()
+        {
+            Key();
+        }
+        static void Key()
+        {
+            Console.WriteLine("Переключение между октавами F1, F2, F3 \nTAB - Выбор октав");
+            ConsoleKeyInfo key = Console.ReadKey();
+            if (key.Key == ConsoleKey.F1)
+            {
+                Console.WriteLine("Первая октава");
+                int[] first_Octave = new int[] { 130, 138, 146, 155, 164, 174, 185, 196, 207, 220, 233, 246 };
+
+                ConsoleKeyInfo button = Console.ReadKey();
+                while (button.Key != ConsoleKey.Escape)
+                {
+                    if (button.Key == ConsoleKey.Q)
+
+                    {
+                        Console.Beep(first_Octave[0], 500);
+                        Console.Clear();
+                    }
+                    if (button.Key == ConsoleKey.A)
+                    {
+                        Console.Beep(first_Octave[1], 500);
+                        Console.Clear();
+                    }
+                    if (button.Key == ConsoleKey.Z)
+                    {
+                        Console.Beep(first_Octave[2], 500);
+                        Console.Clear();
+                    }
+                    if (button.Key == ConsoleKey.X)
+                    {
+                        Console.Beep(first_Octave[3], 500);
+                        Console.Clear();
+                    }
+                    if (button.Key == ConsoleKey.S)
+                    {
+                        Console.Beep(first_Octave[4], 500);
+                        Console.Clear();
+                    }
+                    if (button.Key == ConsoleKey.W)
+                    {
+                        Console.Beep(first_Octave[5], 500);
+                        Console.Clear();
+                    }
+                    if (button.Key == ConsoleKey.E)
+                    {
+                        Console.Beep(first_Octave[6], 500);
+                        Console.Clear();
+                    }
+                    if (button.Key == ConsoleKey.D)
+                    {
+                        Console.Beep(first_Octave[7], 500);
+                        Console.Clear();
+                    }
+                    if (button.Key == ConsoleKey.C)
+                    {
+                        Console.Beep(first_Octave[8], 500);
+                        Console.Clear();
+                    }
+                    if (button.Key == ConsoleKey.V)
+                    {
+                        Console.Beep(first_Octave[9], 500);
+                        Console.Clear();
+                    }
+                    if (button.Key == ConsoleKey.F)
+                    {
+                        Console.Beep(first_Octave[10], 500);
+                        Console.Clear();
+                    }
+                    if (button.Key == ConsoleKey.R)
+                    {
+                        Console.Beep(first_Octave[11], 500);
+                        Console.Clear();
+                    }
+                    button = Console.ReadKey();
+                    if (button.Key == ConsoleKey.Tab)
+                    {
+                        Choice_();
+                    }
+                }
+            }
+            if (key.Key == ConsoleKey.F2)
+            {
+                Console.WriteLine("Вторая октава");
+                int[] second_Octave = new int[] { 261, 277, 293, 311, 329, 349, 370, 392, 415, 440, 466, 493 };
+
+                ConsoleKeyInfo button = Console.ReadKey();
+                while (button.Key != ConsoleKey.Escape)
+                {
+                    if (button.Key == ConsoleKey.P)
+                    {
+                        Console.Beep(second_Octave[0], 500);
+                        Console.Clear();
+                    }
+                    if (button.Key == ConsoleKey.O)
+                    {
+                        Console.Beep(second_Octave[1], 500);
+                        Console.Clear();
+                    }
+                    if (button.Key == ConsoleKey.I)
+                    {
+                        Console.Beep(second_Octave[2], 500);
+                        Console.Clear();
+                    }
+                    if (button.Key == ConsoleKey.U)
+                    {
+                        Console.Beep(second_Octave[3], 500);
+                        Console.Clear();
+                    }
+                    if (button.Key == ConsoleKey.Y)
+                    {
+                        Console.Beep(second_Octave[4], 500);
+                        Console.Clear();
+                    }
+                    if (button.Key == ConsoleKey.T)
+                    {
+                        Console.Beep(second_Octave[5], 500);
+                        Console.Clear();
+                    }
+                    if (button.Key == ConsoleKey.G)
+                    {
+                        Console.Beep(second_Octave[6], 500);
+                        Console.Clear();
+                    }
+                    if (button.Key == ConsoleKey.H)
+                    {
+                        Console.Beep(second_Octave[7], 500);
+                        Console.Clear();
+                    }
+                    if (button.Key == ConsoleKey.J)
+                    {
+                        Console.Beep(second_Octave[8], 500);
+                        Console.Clear();
+                    }
+                    if (button.Key == ConsoleKey.K)
+                    {
+                        Console.Beep(second_Octave[9], 500);
+                        Console.Clear();
+                    }
+                    if (button.Key == ConsoleKey.L)
+                    {
+                        Console.Beep(second_Octave[10], 500);
+                        Console.Clear();
+                    }
+                    if (button.Key == ConsoleKey.M)
+                    {
+                        Console.Beep(second_Octave[11], 500);
+                        Console.Clear();
+                    }
+                    button = Console.ReadKey();
+                    if (button.Key == ConsoleKey.Tab)
+                    {
+                        Choice_();
+                    }
+                }
+            }
+            if (key.Key == ConsoleKey.F3)
+            {
+                Console.WriteLine("Третья октава");
+                int[] third_Octave = new int[] { 523, 554, 587, 622, 659, 698, 740, 784, 830, 880, 932, 987 };
+
+                ConsoleKeyInfo button = Console.ReadKey();
+                while (button.Key != ConsoleKey.Escape)
+                {
+                    if (button.Key == ConsoleKey.Q)
+                    {
+                        Console.Beep(third_Octave[0], 500);
+                        Console.Clear();
+                    }
+                    if (button.Key == ConsoleKey.W)
+                    {
+                        Console.Beep(third_Octave[1], 500);
+                        Console.Clear();
+                    }
+                    if (button.Key == ConsoleKey.E)
+                    {
+                        Console.Beep(third_Octave[2], 500);
+                        Console.Clear();
+                    }
+                    if (button.Key == ConsoleKey.R)
+                    {
+                        Console.Beep(third_Octave[3], 500);
+                        Console.Clear();
+                    }
+                    if (button.Key == ConsoleKey.T)
+                    {
+                        Console.Beep(third_Octave[4], 500);
+                        Console.Clear();
+                    }
+                    if (button.Key == ConsoleKey.Y)
+                    {
+                        Console.Beep(third_Octave[5], 500);
+                        Console.Clear();
+                    }
+                    if (button.Key == ConsoleKey.Z)
+                    {
+                        Console.Beep(third_Octave[6], 500);
+                        Console.Clear();
+                    }
+                    if (button.Key == ConsoleKey.X)
+                    {
+                        Console.Beep(third_Octave[7], 500);
+                        Console.Clear();
+                    }
+                    if (button.Key == ConsoleKey.C)
+                    {
+                        Console.Beep(third_Octave[8], 500);
+                        Console.Clear();
+                    }
+                    if (button.Key == ConsoleKey.V)
+                    {
+                        Console.Beep(third_Octave[9], 500);
+                        Console.Clear();
+                    }
+                    if (button.Key == ConsoleKey.B)
+                    {
+                        Console.Beep(third_Octave[10], 500);
+                        Console.Clear();
+                    }
+                    if (button.Key == ConsoleKey.N)
+                    {
+                        Console.Beep(third_Octave[11], 500);
+                        Console.Clear();
+                    }
+                    button = Console.ReadKey();
+                    if (button.Key == ConsoleKey.Tab)
+                    {
+                        Choice_();
+                    }
+                }
+            }
+        }
+    }
+}
